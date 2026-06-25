@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Valley Nursery | Gallery</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="gallery-page">
+  <header>
+    <div class="logo">🌿 Bloom Valley Nursery</div>
+    <nav aria-label="Main navigation">
+      <a href="/home.html">Home</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/about.html">About Us</a>
+      <a href="/plant-care.html">Plant Care</a>
+    </nav>
+  </header>
+
+  <section class="page-hero"><h1>Shop Our Nursery</h1><p>Browse plants, flowers, garden supplies, and add products to your cart.</p></section>
+
+  <main class="container">
+    <h1>Product Gallery</h1>
+    <p>Browse our nursery products and add items to your cart.</p>
+
+    <div class="cart-actions">
+      <button onclick="viewCart()">View Cart</button>
+      <button onclick="clearCart()">Clear Cart</button>
+      <button onclick="processOrder()">Process Order</button>
+    </div>
+
+    <section class="products" aria-label="Products for sale">
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80" alt="Succulent plant in a small pot" />
+        <h2>Succulent Plant</h2>
+        <p>Perfect small plant for desks and windowsills.</p>
+        <p class="price">$8.99</p>
+        <button onclick="addToCart('Succulent Plant', 8.99)">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80" alt="Herbs growing in a garden" />
+        <h2>Herb Starter Pack</h2>
+        <p>Basil, mint, and parsley starters for home cooking.</p>
+        <p class="price">$12.99</p>
+        <button onclick="addToCart('Herb Starter Pack', 12.99)">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=800&q=80" alt="Colorful flowering plants" />
+        <h2>Flower Basket</h2>
+        <p>A colorful basket of seasonal flowers.</p>
+        <p class="price">$18.99</p>
+        <button onclick="addToCart('Flower Basket', 18.99)">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80" alt="Bag of potting soil near plants" />
+        <h2>Organic Potting Soil</h2>
+        <p>Nutrient-rich soil for indoor and outdoor plants.</p>
+        <p class="price">$10.99</p>
+        <button onclick="addToCart('Organic Potting Soil', 10.99)">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=800&q=80" alt="Decorative plant pots" />
+        <h2>Decorative Pot</h2>
+        <p>Stylish pot for flowers, herbs, or houseplants.</p>
+        <p class="price">$14.99</p>
+        <button onclick="addToCart('Decorative Pot', 14.99)">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1591958911259-bee2173bdccc?auto=format&fit=crop&w=800&q=80" alt="Gardening tools on soil" />
+        <h2>Garden Tool Set</h2>
+        <p>Basic tools for planting, trimming, and garden care.</p>
+        <p class="price">$24.99</p>
+        <button onclick="addToCart('Garden Tool Set', 24.99)">Add to Cart</button>
+      </article>
+    </section>
+
+    <section class="cart-display">
+      <h2>Your Cart</h2>
+      <div id="cartOutput">Cart is currently empty.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bloom Valley Nursery | Growing with our community.</p>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>

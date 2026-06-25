@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Valley Nursery | About Us</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="about-page">
+  <header>
+    <div class="logo">🌿 Bloom Valley Nursery</div>
+    <nav aria-label="Main navigation">
+      <a href="/home.html">Home</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/about.html">About Us</a>
+      <a href="/plant-care.html">Plant Care</a>
+    </nav>
+  </header>
+
+  <section class="page-hero"><h1>About Bloom Valley</h1><p>Learn about our community nursery, values, hours, and customer support.</p></section>
+
+  <main class="container">
+    <h1>About Bloom Valley Nursery</h1>
+    <section class="about-grid">
+      <div>
+        <h2>Our Story</h2>
+        <p>Bloom Valley Nursery is a small local plant and garden business focused on helping customers grow healthy, beautiful spaces. We offer plants, flowers, garden supplies, and friendly support for beginners and experienced gardeners.</p>
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide quality plants, useful gardening products, and helpful advice that encourages customers to enjoy gardening with confidence.</p>
+      </div>
+      <div class="info-box">
+        <h2>Visit Us</h2>
+        <p><strong>Location:</strong> 145 Garden Lane, Bloom Valley</p>
+        <p><strong>Hours:</strong> Monday-Saturday, 9:00 AM - 6:00 PM</p>
+        <p><strong>Phone:</strong> (555) 246-8100</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Send us a question or request a custom order.</p>
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Message</button>
+      </form>
+      <p id="contactMessage" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bloom Valley Nursery | Growing with our community.</p>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
